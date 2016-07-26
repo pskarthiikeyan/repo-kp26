@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B80181FA1D09D7F0000FF973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80181F91D09D7F0000FF973 /* AppDelegate.swift */; };
-		B80181FC1D09D7F0000FF973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80181FB1D09D7F0000FF973 /* ViewController.swift */; };
 		B80181FF1D09D7F0000FF973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80181FD1D09D7F0000FF973 /* Main.storyboard */; };
 		B80182011D09D7F0000FF973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80182001D09D7F0000FF973 /* Assets.xcassets */; };
 		B80182041D09D7F0000FF973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80182021D09D7F0000FF973 /* LaunchScreen.storyboard */; };
+		B801820E1D09D859000FF973 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B801820D1D09D859000FF973 /* customCell.swift */; };
+		B80182121D09E2D0000FF973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80182111D09E2D0000FF973 /* ViewController.swift */; };
+		B80182141D09E554000FF973 /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80182131D09E554000FF973 /* newViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B80181F61D09D7F0000FF973 /* peekandPopTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peekandPopTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80181F91D09D7F0000FF973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B80181FB1D09D7F0000FF973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B80181FE1D09D7F0000FF973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B80182001D09D7F0000FF973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B80182031D09D7F0000FF973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B80182051D09D7F0000FF973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B801820D1D09D859000FF973 /* customCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = customCell.swift; path = ../customCell.swift; sourceTree = "<group>"; };
+		B80182111D09E2D0000FF973 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B80182131D09E554000FF973 /* newViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				B80181F91D09D7F0000FF973 /* AppDelegate.swift */,
-				B80181FB1D09D7F0000FF973 /* ViewController.swift */,
+				B80182111D09E2D0000FF973 /* ViewController.swift */,
+				B80182131D09E554000FF973 /* newViewController.swift */,
+				B801820D1D09D859000FF973 /* customCell.swift */,
 				B80181FD1D09D7F0000FF973 /* Main.storyboard */,
 				B80182001D09D7F0000FF973 /* Assets.xcassets */,
 				B80182021D09D7F0000FF973 /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B80181FC1D09D7F0000FF973 /* ViewController.swift in Sources */,
+				B80182121D09E2D0000FF973 /* ViewController.swift in Sources */,
 				B80181FA1D09D7F0000FF973 /* AppDelegate.swift in Sources */,
+				B801820E1D09D859000FF973 /* customCell.swift in Sources */,
+				B80182141D09E554000FF973 /* newViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = peekandPopTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.pskarthiik.peekandPopTest;
@@ -263,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = peekandPopTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.pskarthiik.peekandPopTest;
@@ -289,6 +299,7 @@
 				B801820A1D09D7F0000FF973 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
